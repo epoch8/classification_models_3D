@@ -8,11 +8,11 @@ try:
     from keras import regularizers
     from keras import constraints
     from keras import layers
-    from keras.engine import InputSpec
+    from keras.src.engine import InputSpec
     from keras.legacy.interfaces import conv3d_args_preprocessor, generate_legacy_interface
-    from keras.layers import Conv3D
+    from keras.src.layers import Conv3D
     from keras.backend.tensorflow_backend import _preprocess_padding, _preprocess_conv3d_input
-    from keras.utils import conv_utils
+    from keras.src.utils import conv_utils
 except:
     from tensorflow.keras import backend as K
     from tensorflow.keras import initializers
